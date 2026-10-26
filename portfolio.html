@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15352e">
+  <meta name="description" content="Explore Benny Chen Yu Xing's developing portfolio of application development, UI/UX and visual design. Discover the Court Studio project and upcoming coursework.">
+  <title>Portfolio | Benny Chen — Court Studio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="portfolio.css?v=20261026-portfolio">
+  <script src="main.js?v=20261026-portfolio" defer></script>
+</head>
+<body class="portfolio-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Court Studio, home">
+        <span class="logo-crop"><img src="benny-chen-logo.png" alt="" width="1536" height="1024"></span>
+        <span class="brand-name">COURT STUDIO<span>BENNY CHEN</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="menu-label">Menu</span><span class="menu-icon" aria-hidden="true"></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="index.html#about">About</a>
+        <a class="nav-contact" href="index.html#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="portfolio-intro container" aria-labelledby="portfolio-title">
+      <div class="portfolio-topline"><p class="eyebrow"><a href="index.html">HOME</a><span aria-hidden="true">/</span> PORTFOLIO</p><p class="eyebrow">DESIGN · DEVELOPMENT · DISCOVERY</p></div>
+      <div class="portfolio-intro-grid">
+        <div><p class="eyebrow"><span class="small-rule"></span> THE WORK, SO FAR</p><h1 id="portfolio-title">SELECTED<span>work.</span></h1></div>
+        <div class="portfolio-intro-copy"><span class="portfolio-cross" aria-hidden="true">↗</span><h2>From an idea<br>to something useful.</h2><p>A growing collection of application development, UI/UX and visual design. A space for the things I make, the choices behind them and what I learn along the way.</p><div class="portfolio-intro-meta"><span>BENNY CHEN YU XING</span><span>IT (FULL STACK) STUDENT</span></div></div>
+      </div>
+    </section>
+    <section class="portfolio-work container" aria-label="Portfolio projects">
+      <div class="portfolio-toolbar">
+        <div class="portfolio-filters" role="group" aria-label="Filter projects by category" hidden>
+          <button type="button" data-filter="all" aria-pressed="true" aria-controls="portfolio-grid">All work <span data-filter-count="all">1</span></button>
+          <button type="button" data-filter="development" aria-pressed="false" aria-controls="portfolio-grid">Application development <span data-filter-count="development">1</span></button>
+          <button type="button" data-filter="design" aria-pressed="false" aria-controls="portfolio-grid">UI/UX & visual design <span data-filter-count="design">0</span></button>
+        </div>
+        <p class="portfolio-result" role="status" aria-live="polite" data-filter-result>1 project in progress · coursework coming soon</p>
+      </div>
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Add real coursework cards here when the project details are ready. -->
+        <article class="work-card work-card-featured" data-work-card data-category="development">
+          <div class="work-card-art website-art" role="img" aria-label="A stylised preview of the Court Studio home page, with its Design, Build, Keep moving headline and badminton court artwork">
+            <div class="work-art-label"><span>PERSONAL PORTFOLIO</span><span>01 / WEB DEVELOPMENT</span></div>
+            <div class="browser-preview" aria-hidden="true"><div class="browser-preview-bar"><span class="browser-dots"><i></i><i></i><i></i></span><span>court-studio / home</span><span>↗</span></div><div class="mini-page"><div class="mini-nav"><strong>COURT STUDIO</strong><span>HOME&nbsp;&nbsp; WORK&nbsp;&nbsp; ABOUT</span></div><div class="mini-hero"><div><strong>DESIGN.<br>BUILD.</strong><em>Keep moving.</em><span class="mini-copy"></span><span class="mini-copy short"></span><span class="mini-button">EXPLORE MY WORK ↗</span></div><div class="mini-court"><span class="mini-court-line"></span><svg viewBox="0 0 150 200" fill="none"><path d="M40 128 12 32Q68 7 133 25L88 141Z" fill="#D9EE78"/><path d="m40 128-6-104m23 110L63 17m9 119 24-117m-9 120 35-117M30 88l72 9" stroke="#15352E" stroke-width="1.2"/><path d="m40 128 48 13-8 29c-4 15-17 22-30 18s-21-17-17-30Z" fill="#F5F4EB"/><path d="m38 136 47 13" stroke="#15352E" stroke-width="2"/></svg></div></div><div class="mini-footer">FULL STACK DEVELOPMENT × UI/UX & VISUAL DESIGN</div></div></div>
+            <div class="work-art-footer"><span>BUILT WITH CURIOSITY.</span><span>HTML / CSS / JAVASCRIPT</span></div>
+          </div>
+          <div class="work-card-copy"><div class="work-card-meta"><p class="eyebrow">01 / APPLICATION DEVELOPMENT</p><span class="project-status"><span aria-hidden="true"></span> IN PROGRESS</span></div><h2>Court Studio<span aria-hidden="true">↗</span></h2><p class="work-card-type">Personal portfolio website</p><p>A website that connects my full stack studies with my interest in UI/UX, visual design and badminton. A first step towards presenting my work and applying for an internship.</p><ul class="tags" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive design</li></ul><button class="text-link" type="button" data-open-project="court-studio-case">Explore the project <span aria-hidden="true">↗</span></button></div>
+        </article>
+        <article class="work-card work-card-placeholder" data-work-card data-category="development" data-placeholder>
+          <div class="placeholder-topline"><span class="eyebrow">APPLICATION DEVELOPMENT</span><span aria-hidden="true">02</span></div><div class="placeholder-mark" aria-hidden="true"><span></span><span></span><span>+</span></div><div><span class="placeholder-label">PLACEHOLDER</span><h2>More builds to come.</h2><p>A space reserved for my application coursework and its development story.</p></div>
+        </article>
+        <article class="work-card work-card-placeholder design-placeholder" data-work-card data-category="design" data-placeholder>
+          <div class="placeholder-topline"><span class="eyebrow">UI/UX & VISUAL DESIGN</span><span aria-hidden="true">03</span></div><div class="placeholder-mark" aria-hidden="true"><span></span><span></span><span>+</span></div><div><span class="placeholder-label">PLACEHOLDER</span><h2>More ideas to explore.</h2><p>A space reserved for my design coursework, explorations and case studies.</p></div>
+        </article>
+      </div>
+      <p class="portfolio-note"><span aria-hidden="true">↳</span> This portfolio is being developed. Placeholder spaces are not completed projects; real coursework and case studies will be added here.</p>
+      <noscript><p class="portfolio-note">All projects are shown. Enable JavaScript to use the category filters and project details dialog.</p></noscript>
+    </section>
+    <section class="portfolio-next"><div class="container portfolio-next-inner"><div><p class="eyebrow">BEYOND THE PROJECTS</p><h2>There’s a person<br><em>behind the work.</em></h2></div><div><p>Get to know the student behind Court Studio, my interests and the way I approach a project.</p><a class="button button-dark" href="index.html#about">A little about me <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer container"><a class="footer-wordmark" href="index.html" aria-label="Court Studio, home">COURT STUDIO<span aria-hidden="true">↗</span></a><div class="footer-bottom"><p>© <span data-year>2026</span> Benny Chen Yu Xing</p><p>BUILT WITH CURIOSITY. REFINED WITH PRACTICE.</p><a href="#main">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+  <dialog class="project-dialog portfolio-dialog" id="court-studio-case" aria-labelledby="case-title"><div class="dialog-content"><button class="dialog-close" type="button" data-close-project aria-label="Close project details">Close <span aria-hidden="true">×</span></button><p class="eyebrow">COURT STUDIO / PERSONAL PROJECT / IN PROGRESS</p><h2 id="case-title">A personal portfolio.<br>A clear direction.</h2><p class="lead">Connecting my full stack studies, interest in design and love of badminton in one place.</p><dl class="case-facts"><div><dt>PROJECT TYPE</dt><dd>Personal portfolio</dd></div><div><dt>TECHNOLOGIES</dt><dd>HTML, CSS & JavaScript</dd></div><div><dt>CURRENT STATUS</dt><dd>In development</dd></div></dl><div class="concept-details"><div><h3>The purpose</h3><p>Introduce myself to potential internship employers and create a place to share my projects, my contribution and the learning behind each piece of work.</p></div><div><h3>The design direction</h3><p>A calm ivory background, forest green typography and lime accents. The badminton court gives the layout its structure, with movement and practice as recurring ideas.</p></div><div><h3>The build so far</h3><p>A responsive home page and portfolio page, with mobile navigation, project category filters and accessible project dialogs. The site uses plain HTML, CSS and JavaScript and is published with GitHub Pages.</p></div><div><h3>What comes next</h3><p>Add real coursework, expand the project case studies and complete the remaining portfolio pages. This is an ongoing personal project, rather than a finished coursework case study.</p></div></div><div class="case-links"><a class="button button-dark" href="index.html">View home page <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/25032311-BennyChen/court-studio" target="_blank" rel="noopener noreferrer">Source on GitHub <span aria-hidden="true">↗</span></a></div></div></dialog>
+</body>
+</html>
