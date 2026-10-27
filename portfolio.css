@@ -67,6 +67,53 @@
 .portfolio-dialog { width: min(850px, calc(100% - 36px)); }
 .case-facts { margin: 28px 0; padding-block: 19px; border-block: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 20px; }.case-facts dt { font-size: 7px; letter-spacing: 1px; color: var(--muted); margin-bottom: 6px; }.case-facts dd { margin: 0; font-size: 11px; line-height: 1.8; }.case-links { display: flex; align-items: center; flex-wrap: wrap; gap: 26px; margin-top: 30px; }.case-links .button, .case-links .text-link { font-size: 11px; }
 
+/* These feature maps describe the projects; they are not application screenshots. */
+.work-card-standard { display: flex; flex-direction: column; align-self: stretch; border: 1px solid var(--line); }
+.work-card-standard .work-card-copy { display: flex; flex-direction: column; align-self: stretch; flex: 1; padding: 30px 32px 32px; }
+.work-card-standard .work-card-copy h2 { font-size: 47px; margin-top: 24px; }
+.work-card-standard .text-link { align-self: start; margin-top: auto; }
+.work-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
+.work-card-standard .work-card-actions { margin-top: auto; }
+.work-card-copy .work-card-actions .text-link { gap: 14px; }
+.coursework-art { min-height: 450px; }
+.study-art { background: var(--pine); color: var(--ivory); }
+.study-art .work-art-label, .study-art .work-art-footer { color: #c1cdc4; }
+.map-kicker { display: block; font-size: 8px; letter-spacing: 1.6px; line-height: 1.7; }
+.study-map > strong { display: block; font-family: var(--heading-font); font-size: 72px; font-weight: 500; line-height: .98; margin-block: 17px 26px; letter-spacing: -1px; }
+.study-map > strong > em { font-family: Georgia, serif; font-size: .64em; font-weight: 400; color: var(--lime); }
+.crud-grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid #a0b29466; }
+.crud-grid > span { border-left: 1px solid #a0b29466; padding: 15px 12px; font-size: 12px; letter-spacing: .7px; }
+.crud-grid > span:first-child { border-left: 0; }
+.crud-grid i { display: block; color: var(--lime); font-size: 7px; font-style: normal; margin-bottom: 9px; }
+.map-connection { display: flex; align-items: center; gap: 13px; margin-top: 20px; }
+.map-connection > span { height: 1px; width: 27px; background: var(--lime); }
+.map-connection p { font-size: 7px; letter-spacing: 1px; color: #c1cdc4; }
+.map-connection b { font-size: 13px; font-weight: 400; padding-inline: 5px; }
+.work-card-standard .coursework-art { min-height: 335px; padding-block: 65px; }
+.lost-found-art { background: #e8e9db; }
+.lost-found-map > strong { display: block; font-family: var(--heading-font); font-size: 67px; font-weight: 500; line-height: .88; margin-block: 15px 20px; }
+.lost-found-map > strong > em { font-family: Georgia, serif; font-size: .66em; font-weight: 400; padding-left: 48px; }
+.report-flow, .pipeline-flow { display: flex; align-items: center; gap: 9px; }
+.report-flow > span { padding: 8px 12px; border: 1px solid #9aa88b; font-size: 8px; letter-spacing: .6px; }
+.report-flow > i, .pipeline-flow > i { font-size: 14px; font-style: normal; }
+.lost-found-map > p { font-size: 6px; letter-spacing: 1px; margin-top: 13px; color: var(--muted); }
+.shareplate-art { background: #dce6b9; }
+.donation-map > strong { display: flex; align-items: start; gap: 17px; font-family: var(--heading-font); font-size: 65px; font-weight: 500; line-height: 1; margin-block: 16px 20px; letter-spacing: -1px; }
+.donation-map > strong > span { font-family: Arial, sans-serif; font-size: 28px; font-weight: 400; color: #526d35; }
+.api-lines { display: grid; border-block: 1px solid #aab791; padding-block: 9px; gap: 8px; }
+.api-lines > span { display: flex; align-items: center; gap: 13px; font-family: Consolas, monospace; font-size: 11px; }
+.api-lines b { font-family: var(--body-font); min-width: 33px; font-size: 7px; letter-spacing: .6px; }
+.pipeline-flow { margin-top: 16px; gap: 12px; }
+.pipeline-flow > span { font-size: 7px; letter-spacing: 1px; }
+.portfolio-empty { grid-column: 1 / -1; position: relative; padding: 48px; border: 1px solid var(--line); background: var(--pale); }
+.portfolio-empty h2 { font-size: 49px; margin-top: 19px; padding-right: 35px; }
+.portfolio-empty p { font-size: 12px; line-height: 1.9; color: var(--muted); margin-top: 17px; max-width: 400px; }
+.empty-court-mark { position: absolute; right: 30px; top: 30px; font-size: 32px; font-weight: 400; color: #74813b; }
+.coursework-dialog .case-facts { grid-template-columns: .8fr 1.2fr; }
+.case-bullets { padding-left: 18px; margin: 0; font-size: 12px; line-height: 1.9; color: var(--muted); }
+.case-bullets li + li { margin-top: 11px; }
+.case-bullets code { font-size: .95em; overflow-wrap: anywhere; }
+
 @media (max-width: 1100px) {
   .portfolio-intro-grid { gap: 55px; padding-block: 50px; }.portfolio-intro h1 { font-size: 110px; }.portfolio-intro h1 > span { margin-left: 65px; }.portfolio-intro-copy h2 { font-size: 32px; }.portfolio-toolbar { flex-wrap: wrap; gap: 15px; }.portfolio-result { max-width: none; }.work-card-art { padding-inline: 29px; min-height: 390px; }.work-card-copy { padding: 30px; }.work-card-copy h2 { font-size: 47px; }.work-card-meta { gap: 10px; }.work-card-meta .eyebrow { font-size: 6px; }.mini-hero { gap: 13px; }.mini-page { padding-inline: 15px; }.mini-court { min-height: 145px; }.work-card-placeholder { padding: 23px; gap: 21px; }.work-card-placeholder h2 { font-size: 27px; }.portfolio-next-inner { gap: 70px; }
 }
@@ -81,4 +128,55 @@
 }
 @media (max-width: 360px) {
   .portfolio-intro h1 { font-size: 80px; }.portfolio-intro h1 > span { margin-left: 55px; }.portfolio-intro-grid { gap: 29px; }.portfolio-intro-copy h2 { font-size: 29px; }.work-card-art { padding-inline: 25px; }.mini-page { padding-inline: 12px; }.mini-hero { gap: 12px; }.mini-hero > div:first-child > strong { font-size: 33px; }.mini-hero em { font-size: 13px; }.mini-nav strong { font-size: 5px; }.mini-nav > span { font-size: 3px; }.work-art-label, .work-art-footer { font-size: 5px; }.work-card-copy { padding: 23px; }.work-card-meta .project-status { font-size: 6px; }.work-card-copy h2 { font-size: 42px; }.work-card-placeholder { padding: 21px; grid-template-columns: 35px 1fr; gap: 19px; }.placeholder-mark { width: 33px; height: 46px; }.work-card-placeholder h2 { font-size: 25px; }.portfolio-next h2 { font-size: 41px; }
+}
+
+@media (max-width: 1100px) {
+  .coursework-art { padding-inline: 29px; }
+  .study-map > strong { font-size: 63px; }
+  .crud-grid > span { padding: 13px 9px; font-size: 10px; }
+  .work-card-standard .work-card-copy { padding: 27px; }
+  .work-card-standard .work-card-copy h2 { font-size: 43px; }
+  .report-flow { gap: 7px; }
+  .report-flow > span { padding-inline: 9px; font-size: 7px; }
+  .donation-map > strong { font-size: 57px; }
+}
+@media (min-width: 761px) and (max-width: 900px) {
+  .study-map > strong { font-size: 55px; }
+  .coursework-art { padding-inline: 22px; }
+  .crud-grid > span { padding-inline: 7px; font-size: 9px; }
+  .work-card-standard .work-card-copy { padding: 25px; }
+  .work-card-standard .work-card-copy h2 { font-size: 39px; }
+  .work-card-standard .coursework-art { min-height: 320px; }
+  .work-card-standard .work-card-meta { align-items: start; flex-direction: column; }
+  .report-flow { gap: 5px; }
+  .report-flow > span { padding-inline: 6px; font-size: 6px; }
+  .donation-map > strong { font-size: 51px; gap: 10px; }
+  .donation-map > strong > span { font-size: 23px; }
+}
+@media (max-width: 760px) {
+  .coursework-art { min-height: 365px; padding: 62px 27px; }
+  .study-map > strong { font-size: 59px; }
+  .crud-grid > span { font-size: 10px; padding: 13px 9px; }
+  .map-connection { gap: 9px; }
+  .map-connection p { font-size: 6px; letter-spacing: .6px; }
+  .work-card-standard .coursework-art { min-height: 340px; padding-inline: 27px; }
+  .work-card-standard .work-card-copy { padding: 26px; }
+  .work-card-standard .work-card-copy h2 { font-size: 46px; }
+  .report-flow { gap: 7px; }
+  .report-flow > span { padding-inline: 9px; font-size: 7px; }
+  .portfolio-empty { padding: 30px 25px; }
+  .portfolio-empty h2 { font-size: 39px; }
+  .empty-court-mark { right: 24px; top: 23px; font-size: 25px; }
+  .coursework-dialog .case-facts { grid-template-columns: 1fr; }
+  .case-bullets { font-size: 12px; }
+}
+@media (max-width: 360px) {
+  .coursework-art, .work-card-standard .coursework-art { padding-inline: 22px; }
+  .study-map > strong { font-size: 53px; }
+  .crud-grid > span { padding-inline: 7px; font-size: 9px; }
+  .work-card-standard .work-card-copy { padding: 23px; }
+  .work-card-standard .work-card-copy h2 { font-size: 41px; }
+  .report-flow { gap: 5px; }
+  .report-flow > span { padding-inline: 6px; font-size: 6px; }
+  .donation-map > strong { font-size: 51px; gap: 10px; }
 }

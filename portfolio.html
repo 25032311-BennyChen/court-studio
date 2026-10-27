@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#15352e">
-  <meta name="description" content="Explore Benny Chen Yu Xing's developing portfolio of application development, UI/UX and visual design. Discover the Court Studio project and upcoming coursework.">
+  <meta name="description" content="Explore Benny Chen Yu Xing's application development projects: Study Session Tracker, Lawn &amp; Found, SharePlate and the Court Studio portfolio.">
   <title>Portfolio | Benny Chen — Court Studio</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="portfolio.css?v=20261026-portfolio">
-  <script src="main.js?v=20261026-portfolio" defer></script>
+  <link rel="stylesheet" href="portfolio.css?v=20261027-project-links">
+  <script src="main.js?v=20261027-projects" defer></script>
 </head>
 <body class="portfolio-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -36,41 +36,124 @@
       <div class="portfolio-topline"><p class="eyebrow"><a href="index.html">HOME</a><span aria-hidden="true">/</span> PORTFOLIO</p><p class="eyebrow">DESIGN · DEVELOPMENT · DISCOVERY</p></div>
       <div class="portfolio-intro-grid">
         <div><p class="eyebrow"><span class="small-rule"></span> THE WORK, SO FAR</p><h1 id="portfolio-title">SELECTED<span>work.</span></h1></div>
-        <div class="portfolio-intro-copy"><span class="portfolio-cross" aria-hidden="true">↗</span><h2>From an idea<br>to something useful.</h2><p>A growing collection of application development, UI/UX and visual design. A space for the things I make, the choices behind them and what I learn along the way.</p><div class="portfolio-intro-meta"><span>BENNY CHEN YU XING</span><span>IT (FULL STACK) STUDENT</span></div></div>
+        <div class="portfolio-intro-copy"><span class="portfolio-cross" aria-hidden="true">↗</span><h2>From an idea<br>to something useful.</h2><p>From organising study sessions to campus lost-and-found and food donations, these projects show how I’m applying my development skills through individual and group work.</p><div class="portfolio-intro-meta"><span>BENNY CHEN YU XING</span><span>IT (FULL STACK) STUDENT</span></div></div>
       </div>
     </section>
     <section class="portfolio-work container" aria-label="Portfolio projects">
       <div class="portfolio-toolbar">
         <div class="portfolio-filters" role="group" aria-label="Filter projects by category" hidden>
-          <button type="button" data-filter="all" aria-pressed="true" aria-controls="portfolio-grid">All work <span data-filter-count="all">1</span></button>
-          <button type="button" data-filter="development" aria-pressed="false" aria-controls="portfolio-grid">Application development <span data-filter-count="development">1</span></button>
+          <button type="button" data-filter="all" aria-pressed="true" aria-controls="portfolio-grid">All work <span data-filter-count="all">4</span></button>
+          <button type="button" data-filter="development" aria-pressed="false" aria-controls="portfolio-grid">Application development <span data-filter-count="development">4</span></button>
           <button type="button" data-filter="design" aria-pressed="false" aria-controls="portfolio-grid">UI/UX & visual design <span data-filter-count="design">0</span></button>
         </div>
-        <p class="portfolio-result" role="status" aria-live="polite" data-filter-result>1 project in progress · coursework coming soon</p>
+        <p class="portfolio-result" role="status" aria-live="polite" data-filter-result>4 projects</p>
       </div>
       <div class="portfolio-grid" id="portfolio-grid">
-        <!-- Add real coursework cards here when the project details are ready. -->
+        <article class="work-card work-card-featured coursework-card" data-work-card data-category="development" aria-labelledby="study-card-title">
+          <div class="work-card-art coursework-art study-art" role="img" aria-label="Feature map for Study Session Tracker: add, view, edit and delete study session records">
+            <div class="work-art-label"><span>STUDY SESSION TRACKER</span><span>FEATURE MAP / 01</span></div>
+            <div class="study-map" aria-hidden="true">
+              <span class="map-kicker">STUDY SESSIONS</span>
+              <strong>A little more<br><em>structure.</em></strong>
+              <div class="crud-grid"><span><i>01</i>ADD</span><span><i>02</i>VIEW</span><span><i>03</i>EDIT</span><span><i>04</i>DELETE</span></div>
+              <div class="map-connection"><span></span><p>EXPRESS ROUTES <b>↔</b> EJS TEMPLATES</p></div>
+            </div>
+            <div class="work-art-footer"><span>INDIVIDUAL WEB APPLICATION</span><span>NODE.JS / EJS / BOOTSTRAP</span></div>
+          </div>
+          <div class="work-card-copy">
+            <div class="work-card-meta"><p class="eyebrow">01 / APPLICATION DEVELOPMENT</p><span class="project-status">INDIVIDUAL PROJECT</span></div>
+            <h2 id="study-card-title">Study Session Tracker</h2>
+            <p class="work-card-type">A web app for organising study sessions</p>
+            <p>I built a study session manager with the ability to add, view, edit and delete records. Express routes and EJS templates display session information, with responsive layouts styled in Bootstrap.</p>
+            <ul class="tags" aria-label="Study Session Tracker technologies"><li>Node.js</li><li>Express.js</li><li>EJS</li><li>JavaScript</li><li>HTML</li><li>Bootstrap</li></ul>
+            <button class="text-link" type="button" data-open-project="study-session-case">Project details <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+        <article class="work-card work-card-standard coursework-card" data-work-card data-category="development" aria-labelledby="lawn-card-title">
+          <div class="work-card-art coursework-art lost-found-art" role="img" aria-label="Feature map for Lawn and Found: lost and found reports, notifications and owner verification">
+            <div class="work-art-label"><span>LAWN &amp; FOUND</span><span>FEATURE MAP / 02</span></div>
+            <div class="lost-found-map" aria-hidden="true"><span class="map-kicker">CAMPUS LOST &amp; FOUND</span><strong>Lost.<br><em>Found.</em></strong><div class="report-flow"><span>REPORT</span><i>→</i><span>NOTIFY</span><i>→</i><span>RECOVER</span></div><p>REPORTS + MESSAGES + OWNER CHECKS</p></div>
+            <div class="work-art-footer"><span>GROUP WEB APPLICATION</span><span>MYSQL / AZURE</span></div>
+          </div>
+          <div class="work-card-copy">
+            <div class="work-card-meta"><p class="eyebrow">02 / APPLICATION DEVELOPMENT</p><span class="project-status">GROUP PROJECT</span></div>
+            <h2 id="lawn-card-title">Lawn &amp; Found</h2>
+            <p class="work-card-type">A campus lost-and-found application</p>
+            <p>My work covered report creation and viewing, MySQL queries, found-item notifications and backend ownership checks. I also built EJS views that adapt actions to the report status and user permissions.</p>
+            <ul class="tags" aria-label="Lawn and Found technologies"><li>Node.js</li><li>Express.js</li><li>EJS</li><li>JavaScript</li><li>MySQL (Azure)</li><li>HTML</li></ul>
+            <div class="work-card-actions"><button class="text-link" type="button" data-open-project="lawn-found-case">Project details <span aria-hidden="true">↗</span></button><a class="text-link" href="https://github.com/xavlkh/Lawn-n-Found" target="_blank" rel="noopener noreferrer" aria-label="Source on GitHub for Lawn &amp; Found (opens in a new tab)">Source on GitHub <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="work-card work-card-standard coursework-card" data-work-card data-category="development" aria-labelledby="shareplate-card-title">
+          <div class="work-card-art coursework-art shareplate-art" role="img" aria-label="Feature map for SharePlate: donation APIs, data validation and Jenkins security scans with Trivy">
+            <div class="work-art-label"><span>SHAREPLATE</span><span>FEATURE MAP / 03</span></div>
+            <div class="donation-map" aria-hidden="true"><span class="map-kicker">FOOD DONATIONS</span><strong>SharePlate<span>+</span></strong><div class="api-lines"><span><b>GET</b> /api/donations</span><span><b>POST</b> /api/donations</span></div><div class="pipeline-flow"><span>JENKINS</span><i>→</i><span>TRIVY SCANS</span></div></div>
+            <div class="work-art-footer"><span>GROUP WEB APPLICATION</span><span>DATA / APIS / DEVSECOPS</span></div>
+          </div>
+          <div class="work-card-copy">
+            <div class="work-card-meta"><p class="eyebrow">03 / APPLICATION DEVELOPMENT</p><span class="project-status">GROUP PROJECT</span></div>
+            <h2 id="shareplate-card-title">SharePlate</h2>
+            <p class="work-card-type">A food-donation web application</p>
+            <p>I worked on donation schemas and REST APIs, client- and server-side validation, and automated security gates using Jenkins and Trivy to scan code, dependencies and Docker images before release.</p>
+            <ul class="tags" aria-label="Selected SharePlate technologies"><li>React</li><li>Express.js</li><li>MongoDB Atlas</li><li>Mongoose</li><li>Jenkins</li><li>Trivy</li><li>Docker</li></ul>
+            <div class="work-card-actions"><button class="text-link" type="button" data-open-project="shareplate-case">Project details <span aria-hidden="true">↗</span></button><a class="text-link" href="https://github.com/25039766-AmirBak/C270-DevOps-FinalProject" target="_blank" rel="noopener noreferrer" aria-label="Source on GitHub for SharePlate (opens in a new tab)">Source on GitHub <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
         <article class="work-card work-card-featured" data-work-card data-category="development">
           <div class="work-card-art website-art" role="img" aria-label="A stylised preview of the Court Studio home page, with its Design, Build, Keep moving headline and badminton court artwork">
-            <div class="work-art-label"><span>PERSONAL PORTFOLIO</span><span>01 / WEB DEVELOPMENT</span></div>
+            <div class="work-art-label"><span>PERSONAL PORTFOLIO</span><span>04 / WEB DEVELOPMENT</span></div>
             <div class="browser-preview" aria-hidden="true"><div class="browser-preview-bar"><span class="browser-dots"><i></i><i></i><i></i></span><span>court-studio / home</span><span>↗</span></div><div class="mini-page"><div class="mini-nav"><strong>COURT STUDIO</strong><span>HOME&nbsp;&nbsp; WORK&nbsp;&nbsp; ABOUT</span></div><div class="mini-hero"><div><strong>DESIGN.<br>BUILD.</strong><em>Keep moving.</em><span class="mini-copy"></span><span class="mini-copy short"></span><span class="mini-button">EXPLORE MY WORK ↗</span></div><div class="mini-court"><span class="mini-court-line"></span><svg viewBox="0 0 150 200" fill="none"><path d="M40 128 12 32Q68 7 133 25L88 141Z" fill="#D9EE78"/><path d="m40 128-6-104m23 110L63 17m9 119 24-117m-9 120 35-117M30 88l72 9" stroke="#15352E" stroke-width="1.2"/><path d="m40 128 48 13-8 29c-4 15-17 22-30 18s-21-17-17-30Z" fill="#F5F4EB"/><path d="m38 136 47 13" stroke="#15352E" stroke-width="2"/></svg></div></div><div class="mini-footer">FULL STACK DEVELOPMENT × UI/UX & VISUAL DESIGN</div></div></div>
             <div class="work-art-footer"><span>BUILT WITH CURIOSITY.</span><span>HTML / CSS / JAVASCRIPT</span></div>
           </div>
-          <div class="work-card-copy"><div class="work-card-meta"><p class="eyebrow">01 / APPLICATION DEVELOPMENT</p><span class="project-status"><span aria-hidden="true"></span> IN PROGRESS</span></div><h2>Court Studio<span aria-hidden="true">↗</span></h2><p class="work-card-type">Personal portfolio website</p><p>A website that connects my full stack studies with my interest in UI/UX, visual design and badminton. A first step towards presenting my work and applying for an internship.</p><ul class="tags" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive design</li></ul><button class="text-link" type="button" data-open-project="court-studio-case">Explore the project <span aria-hidden="true">↗</span></button></div>
+          <div class="work-card-copy"><div class="work-card-meta"><p class="eyebrow">04 / APPLICATION DEVELOPMENT</p><span class="project-status"><span aria-hidden="true"></span> IN PROGRESS</span></div><h2>Court Studio<span aria-hidden="true">↗</span></h2><p class="work-card-type">Personal portfolio website</p><p>A website that connects my full stack studies with my interest in UI/UX, visual design and badminton. A first step towards presenting my work and applying for an internship.</p><ul class="tags" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive design</li></ul><button class="text-link" type="button" data-open-project="court-studio-case">Explore the project <span aria-hidden="true">↗</span></button></div>
         </article>
-        <article class="work-card work-card-placeholder" data-work-card data-category="development" data-placeholder>
-          <div class="placeholder-topline"><span class="eyebrow">APPLICATION DEVELOPMENT</span><span aria-hidden="true">02</span></div><div class="placeholder-mark" aria-hidden="true"><span></span><span></span><span>+</span></div><div><span class="placeholder-label">PLACEHOLDER</span><h2>More builds to come.</h2><p>A space reserved for my application coursework and its development story.</p></div>
-        </article>
-        <article class="work-card work-card-placeholder design-placeholder" data-work-card data-category="design" data-placeholder>
-          <div class="placeholder-topline"><span class="eyebrow">UI/UX & VISUAL DESIGN</span><span aria-hidden="true">03</span></div><div class="placeholder-mark" aria-hidden="true"><span></span><span></span><span>+</span></div><div><span class="placeholder-label">PLACEHOLDER</span><h2>More ideas to explore.</h2><p>A space reserved for my design coursework, explorations and case studies.</p></div>
-        </article>
+        <div class="portfolio-empty" data-empty-category="design" hidden><span class="eyebrow">UI/UX &amp; VISUAL DESIGN</span><h2>Projects coming soon.</h2><p>I’ll add my UI/UX and visual design projects here as I develop them.</p><span class="empty-court-mark" aria-hidden="true">+</span></div>
       </div>
-      <p class="portfolio-note"><span aria-hidden="true">↳</span> This portfolio is being developed. Placeholder spaces are not completed projects; real coursework and case studies will be added here.</p>
+      <p class="portfolio-note"><span aria-hidden="true">↳</span> Explore each project for my contribution and technologies. UI/UX and visual design projects will be added as I develop them.</p>
       <noscript><p class="portfolio-note">All projects are shown. Enable JavaScript to use the category filters and project details dialog.</p></noscript>
     </section>
     <section class="portfolio-next"><div class="container portfolio-next-inner"><div><p class="eyebrow">BEYOND THE PROJECTS</p><h2>There’s a person<br><em>behind the work.</em></h2></div><div><p>Get to know the student behind Court Studio, my interests and the way I approach a project.</p><a class="button button-dark" href="about.html">A little about me <span aria-hidden="true">↗</span></a></div></div></section>
   </main>
   <footer class="site-footer container"><a class="footer-wordmark" href="index.html" aria-label="Court Studio, home">COURT STUDIO<span aria-hidden="true">↗</span></a><div class="footer-bottom"><p>© <span data-year>2026</span> Benny Chen Yu Xing</p><p>BUILT WITH CURIOSITY. REFINED WITH PRACTICE.</p><a href="#main">Back to top <span aria-hidden="true">↑</span></a></div></footer>
-  <dialog class="project-dialog portfolio-dialog" id="court-studio-case" aria-labelledby="case-title"><div class="dialog-content"><button class="dialog-close" type="button" data-close-project aria-label="Close project details">Close <span aria-hidden="true">×</span></button><p class="eyebrow">COURT STUDIO / PERSONAL PROJECT / IN PROGRESS</p><h2 id="case-title">A personal portfolio.<br>A clear direction.</h2><p class="lead">Connecting my full stack studies, interest in design and love of badminton in one place.</p><dl class="case-facts"><div><dt>PROJECT TYPE</dt><dd>Personal portfolio</dd></div><div><dt>TECHNOLOGIES</dt><dd>HTML, CSS & JavaScript</dd></div><div><dt>CURRENT STATUS</dt><dd>In development</dd></div></dl><div class="concept-details"><div><h3>The purpose</h3><p>Introduce myself to potential internship employers and create a place to share my projects, my contribution and the learning behind each piece of work.</p></div><div><h3>The design direction</h3><p>A calm ivory background, forest green typography and lime accents. The badminton court gives the layout its structure, with movement and practice as recurring ideas.</p></div><div><h3>The build so far</h3><p>Responsive Home, Portfolio, About and Contact pages, with mobile navigation, project category filters and accessible project dialogs. The site uses plain HTML, CSS and JavaScript and is published with GitHub Pages.</p></div><div><h3>What comes next</h3><p>Add real coursework, expand the project case studies, and add my personal photo and verified certifications. This is an ongoing personal project, rather than a finished coursework case study.</p></div></div><div class="case-links"><a class="button button-dark" href="index.html">View home page <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/25032311-BennyChen/court-studio" target="_blank" rel="noopener noreferrer">Source on GitHub <span aria-hidden="true">↗</span></a></div></div></dialog>
+  <dialog class="project-dialog portfolio-dialog coursework-dialog" id="study-session-case" aria-labelledby="study-case-title">
+    <div class="dialog-content">
+      <button class="dialog-close" type="button" data-close-project aria-label="Close project details">Close <span aria-hidden="true">×</span></button>
+      <p class="eyebrow">01 / APPLICATION DEVELOPMENT / INDIVIDUAL PROJECT</p>
+      <h2 id="study-case-title">Study Session Tracker</h2>
+      <p class="lead">A web application for managing and organising study session records.</p>
+      <dl class="case-facts"><div><dt>PROJECT TYPE</dt><dd>Individual web application development project</dd></div><div><dt>TECHNOLOGIES</dt><dd>Node.js, Express.js, EJS, JavaScript, HTML and Bootstrap</dd></div></dl>
+      <div class="concept-details">
+        <div><h3>The purpose</h3><p>Keep study session records in one application, with controls to create, read, update and delete them.</p></div>
+        <div><h3>What I built</h3><ul class="case-bullets"><li>CRUD functionality to add, view, edit and delete study session records.</li><li>Express.js routes and EJS templates to display session information dynamically.</li><li>A user interface styled with Bootstrap cards, layouts and responsive styling.</li></ul></div>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="project-dialog portfolio-dialog coursework-dialog" id="lawn-found-case" aria-labelledby="lawn-case-title">
+    <div class="dialog-content">
+      <button class="dialog-close" type="button" data-close-project aria-label="Close project details">Close <span aria-hidden="true">×</span></button>
+      <p class="eyebrow">02 / APPLICATION DEVELOPMENT / GROUP PROJECT</p>
+      <h2 id="lawn-case-title">Lawn &amp; Found</h2>
+      <p class="lead">A campus lost-and-found application where authenticated users can submit reports and browse active listings.</p>
+      <dl class="case-facts"><div><dt>PROJECT TYPE</dt><dd>Group web application development project</dd></div><div><dt>TECHNOLOGIES</dt><dd>Node.js, Express.js, EJS, JavaScript, MySQL (Azure) and HTML</dd></div></dl>
+      <div class="concept-details">
+        <div><h3>My contribution to the group project</h3><ul class="case-bullets"><li>Developed the core report creation and viewing features for Lost/Found reports and active campus listings.</li><li>Implemented MySQL INSERT, SELECT and UPDATE queries, including JOINs to retrieve reports with their category and location information.</li><li>Built a Lost Item Found Notification workflow so finders can notify report owners with a message and an optional image.</li><li>Added backend ownership verification and report status updates so only the report owner can confirm recovery or mark their own lost item as recovered.</li><li>Created dynamic EJS templates with conditional action buttons based on report type, status and the logged-in user’s permissions.</li></ul></div>
+      </div>
+      <div class="case-links"><a class="button button-dark" href="https://github.com/xavlkh/Lawn-n-Found" target="_blank" rel="noopener noreferrer" aria-label="Source on GitHub for Lawn &amp; Found (opens in a new tab)">Source on GitHub <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </dialog>
+  <dialog class="project-dialog portfolio-dialog coursework-dialog" id="shareplate-case" aria-labelledby="shareplate-case-title">
+    <div class="dialog-content">
+      <button class="dialog-close" type="button" data-close-project aria-label="Close project details">Close <span aria-hidden="true">×</span></button>
+      <p class="eyebrow">03 / APPLICATION DEVELOPMENT / GROUP PROJECT</p>
+      <h2 id="shareplate-case-title">SharePlate</h2>
+      <p class="lead">A group food-donation web application, with my work focused on donation data, validation and automated security checks.</p>
+      <dl class="case-facts"><div><dt>PROJECT TYPE</dt><dd>Group web application</dd></div><div><dt>TECHNOLOGIES &amp; WORKFLOW</dt><dd>React, Node.js, Express.js, MongoDB Atlas, Mongoose, Jenkins, Trivy, Docker and DevSecOps</dd></div></dl>
+      <div class="concept-details">
+        <div><h3>My contribution to the group project</h3><ul class="case-bullets"><li>Designed Mongoose database schemas and REST API endpoints, including <code>GET /api/donations</code> and <code>POST /api/donations</code>, to store, validate and retrieve donation records.</li><li>Implemented client- and server-side validation for food names, positive whole-number quantities, location text and food expiry dates.</li><li>Integrated automated security gates into the Jenkins CI/CD pipeline using Trivy to scan repository code, dependencies and Docker images before release.</li></ul></div>
+      </div>
+      <div class="case-links"><a class="button button-dark" href="https://github.com/25039766-AmirBak/C270-DevOps-FinalProject" target="_blank" rel="noopener noreferrer" aria-label="Source on GitHub for SharePlate (opens in a new tab)">Source on GitHub <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </dialog>
+  <dialog class="project-dialog portfolio-dialog" id="court-studio-case" aria-labelledby="case-title"><div class="dialog-content"><button class="dialog-close" type="button" data-close-project aria-label="Close project details">Close <span aria-hidden="true">×</span></button><p class="eyebrow">COURT STUDIO / PERSONAL PROJECT / IN PROGRESS</p><h2 id="case-title">A personal portfolio.<br>A clear direction.</h2><p class="lead">Connecting my full stack studies, interest in design and love of badminton in one place.</p><dl class="case-facts"><div><dt>PROJECT TYPE</dt><dd>Personal portfolio</dd></div><div><dt>TECHNOLOGIES</dt><dd>HTML, CSS & JavaScript</dd></div><div><dt>CURRENT STATUS</dt><dd>In development</dd></div></dl><div class="concept-details"><div><h3>The purpose</h3><p>Introduce myself to potential internship employers and create a place to share my projects, my contribution and the learning behind each piece of work.</p></div><div><h3>The design direction</h3><p>A calm ivory background, forest green typography and lime accents. The badminton court gives the layout its structure, with movement and practice as recurring ideas.</p></div><div><h3>The build so far</h3><p>Responsive Home, Portfolio, About and Contact pages, with mobile navigation, project category filters and accessible project dialogs. The site uses plain HTML, CSS and JavaScript and is published with GitHub Pages.</p></div><div><h3>What comes next</h3><p>Expand the project case studies with screenshots and repository links, add design work as I develop it, and add my personal photo and skills certifications. Court Studio is an ongoing personal project.</p></div></div><div class="case-links"><a class="button button-dark" href="index.html">View home page <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/25032311-BennyChen/court-studio" target="_blank" rel="noopener noreferrer">Source on GitHub <span aria-hidden="true">↗</span></a></div></div></dialog>
 </body>
 </html>

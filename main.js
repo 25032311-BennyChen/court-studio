@@ -54,12 +54,13 @@ document.querySelectorAll('.project-dialog').forEach(dialog => {
   dialog.addEventListener('close', () => document.body.classList.remove('dialog-open'));
 });
 
-// Filter the portfolio without counting reserved spaces as actual projects.
+// Filter actual projects and show the relevant category's empty state.
 const filterGroup = document.querySelector('.portfolio-filters');
 if (filterGroup) {
   const cards = [...document.querySelectorAll('[data-work-card]')];
   const result = document.querySelector('[data-filter-result]');
   const buttons = [...filterGroup.querySelectorAll('[data-filter]')];
+  const emptyStates = [...document.querySelectorAll('[data-empty-category]')];
   const matches = (card, category) => category === 'all' || card.dataset.category.split(' ').includes(category);
 
   buttons.forEach(button => {
@@ -68,11 +69,12 @@ if (filterGroup) {
     button.addEventListener('click', () => {
       const category = button.dataset.filter;
       cards.forEach(card => { card.hidden = !matches(card, category); });
+      emptyStates.forEach(state => { state.hidden = state.dataset.emptyCategory !== category; });
       buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
       const visibleCount = cards.filter(card => !card.hidden && !card.hasAttribute('data-placeholder')).length;
       result.textContent = visibleCount
-        ? visibleCount + ' project' + (visibleCount === 1 ? '' : 's') + ' in progress · coursework coming soon'
-        : 'No projects added yet · design coursework coming soon';
+        ? visibleCount + ' project' + (visibleCount === 1 ? '' : 's')
+        : 'No UI/UX or visual design projects added yet';
     });
   });
   filterGroup.hidden = false;
