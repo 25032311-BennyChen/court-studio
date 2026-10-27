@@ -16,7 +16,7 @@
 .profile-initials { position: absolute; inset: 20% 0 auto; text-align: center; font-family: var(--heading-font); font-size: clamp(140px, 16vw, 220px); font-weight: 500; line-height: 1; letter-spacing: -10px; }.profile-initials > span { color: var(--lime); }.profile-initials i { position: absolute; font-family: Arial, sans-serif; font-size: 28px; font-weight: 400; font-style: normal; top: 1%; right: 14%; letter-spacing: 0; color: var(--lime); }
 .profile-photo-label { position: absolute; top: 68%; left: 24px; right: 24px; text-align: center; font-size: 6px; letter-spacing: 1.9px; color: #c3d0bd; }.profile-photo-label > span { display: block; font-size: 8px; letter-spacing: 1.3px; margin-top: 5px; color: var(--ivory); }
 .about-profile figcaption { display: flex; gap: 10px; align-items: center; font-size: 7px; letter-spacing: 1.1px; padding-top: 17px; }.about-profile .status-dot { height: 5px; width: 5px; }
-.about-section-index { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding-block: 17px; border-block: 1px solid var(--line); }.about-section-index a { display: inline-flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 28px; font-size: 7px; letter-spacing: .9px; }.about-section-index a > span { font-size: 16px; }.about-section-index a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.about-section-index { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; padding-block: 17px; border-block: 1px solid var(--line); }.about-section-index a { display: inline-flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 28px; font-size: 7px; letter-spacing: .9px; }.about-section-index a > span { font-size: 16px; }.about-section-index a:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 /* Education and toolkit: only the programme and tools supplied by Benny. */
 .about-background { padding-block: 82px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 115px; }
@@ -31,6 +31,34 @@
 .learning-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 34px; padding-top: 29px; border-top: 1px solid var(--line); }
 .learning-area { padding-inline: 29px; border-left: 1px solid var(--line); }.learning-area:first-child { border-left: 0; padding-left: 0; }.learning-area:last-child { padding-right: 0; }.learning-number { font-size: 8px; letter-spacing: 1.4px; color: var(--muted); }.learning-area h3 { margin-block: 15px 12px; font-family: var(--heading-font); font-size: 30px; font-weight: 500; line-height: 1.1; }.learning-area p { font-size: 11px; color: var(--muted); line-height: 1.85; max-width: 300px; }
 .skill-tags { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 22px 0 0; list-style: none; }.skill-tags li { border: 1px solid var(--line); padding: 5px 9px; font-size: 10px; line-height: 1.5; }
+
+/* Academic awards are distinct from the technical certification slots below. */
+.about-achievements { padding-block: 58px 76px; border-top: 1px solid var(--line); }
+.achievement-tally { display: flex; align-items: center; gap: 19px; border-left: 1px solid var(--line); padding-left: 25px; }
+.achievement-tally > span { font-family: var(--heading-font); font-size: 83px; font-weight: 500; line-height: .95; letter-spacing: -1px; }
+.achievement-tally > p { font-size: 8px; letter-spacing: 1.4px; line-height: 1.9; }
+.achievement-intro { font-size: 12px; line-height: 1.9; color: var(--muted); margin-top: 23px; }
+.achievement-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 23px; margin-top: 30px; }
+.achievement-card { padding: 27px; border: 1px solid var(--line); background: #efefe5; min-width: 0; }
+.achievement-featured { background: var(--pine); color: var(--ivory); border-color: var(--pine); }
+.achievement-card-top { display: flex; justify-content: space-between; align-items: start; gap: 15px; }
+.achievement-semester { font-family: var(--heading-font); font-size: 34px; font-weight: 500; line-height: 1.1; letter-spacing: -.3px; }
+.achievement-semester > span { display: block; font-family: var(--body-font); font-size: 8px; font-weight: 500; line-height: 1.7; letter-spacing: 1.4px; margin-top: 7px; }
+.achievement-symbol { width: 43px; height: 43px; flex-shrink: 0; color: #778845; }
+.achievement-featured .achievement-symbol { color: var(--lime); }
+.achievement-kind { font-size: 6px; letter-spacing: 1.4px; line-height: 1.8; margin-top: 29px; color: var(--muted); }
+.achievement-card h3 { font-family: var(--heading-font); font-size: 37px; font-weight: 500; line-height: 1.08; letter-spacing: -.2px; margin-top: 10px; }
+.achievement-issuer { margin-top: 13px; font-size: 11px; line-height: 1.8; color: var(--muted); }
+.achievement-featured .achievement-kind, .achievement-featured .achievement-issuer { color: #c1cdc4; }
+.achievement-certificate { display: block; margin-top: 24px; }
+.achievement-certificate > img { width: 100%; height: auto; aspect-ratio: 849 / 1200; object-fit: contain; background: #fff; border: 1px solid var(--line); }
+.achievement-view { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; margin-top: 16px; border-top: 1px solid var(--line); font-size: 11px; font-weight: 500; line-height: 1.7; }
+.achievement-view > span { display: inline-flex; align-items: center; gap: 9px; font-size: 8px; letter-spacing: 1px; }
+.achievement-view > span > span { font-size: 18px; line-height: 1; }
+.achievement-certificate:hover .achievement-view { text-decoration: underline; text-underline-offset: 4px; }
+.achievement-featured .achievement-certificate:focus-visible { outline-color: var(--lime); }
+.achievement-featured .achievement-view { border-color: #647e626b; }
+.achievement-featured .achievement-view > span { color: var(--lime); }
 
 /* The badminton connection is personal context, rather than a sports profile. */
 .about-interest { background: var(--pine); color: var(--ivory); }.interest-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 95px; align-items: center; padding-block: 66px; }
@@ -59,4 +87,51 @@
 }
 @media (max-width: 360px) {
   .about-intro h1 { font-size: 75px; }.about-intro h1 > span { font-size: 31px; letter-spacing: -1.7px; }.about-intro-copy > .eyebrow { font-size: 7px; letter-spacing: 1px; }.about-intro-actions { gap: 18px; }.about-intro-actions .button { font-size: 10px; padding-inline: 15px; gap: 21px; }.about-intro-actions .text-link { font-size: 10px; gap: 12px; }.about-hero-bio { font-size: 13px; }.profile-frame-top, .profile-frame-bottom { left: 20px; right: 20px; }.profile-frame-top { font-size: 5px; letter-spacing: 1px; }.profile-initials { font-size: 143px; top: 19%; }.profile-frame-bottom { font-size: 6px; bottom: 17px; }.profile-frame-bottom > span:last-child { font-size: 5px; }.profile-photo-label { top: 66%; }.about-profile figcaption { font-size: 6px; }.about-section-index { gap: 8px 17px; }.about-section-index a { font-size: 5px; letter-spacing: .6px; }.about-section-heading h2, .about-split-heading h2 { font-size: 43px; }.interest-copy h2 { font-size: 47px; }.interest-art { padding-inline: 19px; }.interest-art-label { font-size: 5px; }.about-next h2 { font-size: 49px; }.about-next-actions { gap: 16px; }.about-next-actions .button { gap: 20px; padding-inline: 15px; }
+}
+
+/* Award layouts follow the same tablet and phone breakpoints as the page. */
+@media (max-width: 1100px) {
+  .about-achievements { padding-block: 48px 64px; }
+  .achievement-grid { gap: 18px; }
+  .achievement-card { padding: 23px; }
+  .achievement-tally { padding-left: 22px; gap: 16px; }
+  .achievement-tally > span { font-size: 73px; }
+  .achievement-tally > p { font-size: 7px; }
+  .achievement-card h3 { font-size: 32px; }
+  .achievement-semester { font-size: 31px; }
+  .achievement-symbol { width: 36px; height: 36px; }
+}
+@media (min-width: 761px) and (max-width: 900px) {
+  .achievement-grid { gap: 15px; }
+  .achievement-card { padding: 20px; }
+  .achievement-tally > span { font-size: 64px; }
+  .achievement-tally > p { font-size: 6px; letter-spacing: 1.1px; }
+  .achievement-card h3 { font-size: 29px; }
+  .achievement-semester { font-size: 28px; }
+  .achievement-symbol { width: 31px; height: 31px; }
+  .achievement-kind { font-size: 5px; letter-spacing: 1.1px; }
+  .achievement-issuer { font-size: 10px; }
+  .achievement-view { font-size: 10px; }
+}
+@media (max-width: 760px) {
+  .about-section-index a:last-child { grid-column: 1 / -1; }
+  .about-achievements { padding-block: 39px 48px; }
+  .achievement-tally { margin-top: 23px; padding-left: 0; border-left: 0; gap: 16px; }
+  .achievement-tally > span { font-size: 64px; }
+  .achievement-tally > p { font-size: 7px; letter-spacing: 1.3px; }
+  .achievement-intro { margin-top: 18px; font-size: 12px; }
+  .achievement-grid { grid-template-columns: 1fr; gap: 17px; margin-top: 24px; }
+  .achievement-card { padding: 25px; }
+  .achievement-semester { font-size: 33px; }
+  .achievement-symbol { width: 39px; height: 39px; }
+  .achievement-kind { font-size: 6px; margin-top: 23px; }
+  .achievement-card h3 { font-size: 35px; }
+  .achievement-issuer { font-size: 11px; margin-top: 12px; }
+  .achievement-certificate { margin-top: 21px; }
+  .achievement-view { font-size: 12px; }
+}
+@media (max-width: 360px) {
+  .achievement-card { padding: 23px; }
+  .achievement-semester { font-size: 31px; }
+  .achievement-card h3 { font-size: 33px; }
 }
