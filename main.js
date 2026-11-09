@@ -31,8 +31,6 @@ if (menuButton && navigation) {
   });
 }
 
-// aria-current="page" is set in each page's HTML so it remains correct on scroll.
-
 // Native dialogs provide focus management, keyboard access and Escape to close.
 document.querySelectorAll('[data-open-project]').forEach(button => {
   const dialog = button.dataset.openProject

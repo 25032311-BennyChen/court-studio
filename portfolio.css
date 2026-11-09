@@ -44,8 +44,8 @@
 .work-card-copy { padding: 36px; align-self: center; }
 .work-card-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
 .work-card-meta .eyebrow { font-size: 7px; letter-spacing: 1px; }
-.work-card-copy h2 { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 55px; margin-top: 30px; }
-.work-card-copy h2 > span { font-family: Arial, sans-serif; font-size: 28px; font-weight: 400; color: #80923c; }
+.work-card-copy h3 { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 55px; margin-top: 30px; }
+.work-card-copy h3 > span { font-family: Arial, sans-serif; font-size: 28px; font-weight: 400; color: #80923c; }
 .work-card-copy .work-card-type { margin-top: 7px; color: var(--pine); font-size: 12px; font-weight: 500; }
 .work-card-copy > p:not(.work-card-type) { margin-top: 18px; color: var(--muted); font-size: 12px; line-height: 1.9; }
 .work-card-copy .tags { margin-block: 23px 15px; }.work-card-copy .tags li { font-size: 9px; }
@@ -70,7 +70,7 @@
 /* These feature maps describe the projects; they are not application screenshots. */
 .work-card-standard { display: flex; flex-direction: column; align-self: stretch; border: 1px solid var(--line); }
 .work-card-standard .work-card-copy { display: flex; flex-direction: column; align-self: stretch; flex: 1; padding: 30px 32px 32px; }
-.work-card-standard .work-card-copy h2 { font-size: 47px; margin-top: 24px; }
+.work-card-standard .work-card-copy h3 { font-size: 47px; margin-top: 24px; }
 .work-card-standard .text-link { align-self: start; margin-top: auto; }
 .work-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
 .work-card-standard .work-card-actions { margin-top: auto; }
@@ -106,7 +106,7 @@
 .pipeline-flow { margin-top: 16px; gap: 12px; }
 .pipeline-flow > span { font-size: 7px; letter-spacing: 1px; }
 .portfolio-empty { grid-column: 1 / -1; position: relative; padding: 48px; border: 1px solid var(--line); background: var(--pale); }
-.portfolio-empty h2 { font-size: 49px; margin-top: 19px; padding-right: 35px; }
+.portfolio-empty h3 { font-size: 49px; margin-top: 19px; padding-right: 35px; }
 .portfolio-empty p { font-size: 12px; line-height: 1.9; color: var(--muted); margin-top: 17px; max-width: 400px; }
 .empty-court-mark { position: absolute; right: 30px; top: 30px; font-size: 32px; font-weight: 400; color: #74813b; }
 .coursework-dialog .case-facts { grid-template-columns: .8fr 1.2fr; }
@@ -115,19 +115,19 @@
 .case-bullets code { font-size: .95em; overflow-wrap: anywhere; }
 
 @media (max-width: 1100px) {
-  .portfolio-intro-grid { gap: 55px; padding-block: 50px; }.portfolio-intro h1 { font-size: 110px; }.portfolio-intro h1 > span { margin-left: 65px; }.portfolio-intro-copy h2 { font-size: 32px; }.portfolio-toolbar { flex-wrap: wrap; gap: 15px; }.portfolio-result { max-width: none; }.work-card-art { padding-inline: 29px; min-height: 390px; }.work-card-copy { padding: 30px; }.work-card-copy h2 { font-size: 47px; }.work-card-meta { gap: 10px; }.work-card-meta .eyebrow { font-size: 6px; }.mini-hero { gap: 13px; }.mini-page { padding-inline: 15px; }.mini-court { min-height: 145px; }.work-card-placeholder { padding: 23px; gap: 21px; }.work-card-placeholder h2 { font-size: 27px; }.portfolio-next-inner { gap: 70px; }
+  .portfolio-intro-grid { gap: 55px; padding-block: 50px; }.portfolio-intro h1 { font-size: 110px; }.portfolio-intro h1 > span { margin-left: 65px; }.portfolio-intro-copy h2 { font-size: 32px; }.portfolio-toolbar { flex-wrap: wrap; gap: 15px; }.portfolio-result { max-width: none; }.work-card-art { padding-inline: 29px; min-height: 390px; }.work-card-copy { padding: 30px; }.work-card-copy h3 { font-size: 47px; }.work-card-meta { gap: 10px; }.work-card-meta .eyebrow { font-size: 6px; }.mini-hero { gap: 13px; }.mini-page { padding-inline: 15px; }.mini-court { min-height: 145px; }.work-card-placeholder { padding: 23px; gap: 21px; }.work-card-placeholder h2 { font-size: 27px; }.portfolio-next-inner { gap: 70px; }
 }
 @media (min-width: 761px) and (max-width: 900px) {
-  .portfolio-intro-grid { gap: 35px; grid-template-columns: 1.1fr .9fr; }.portfolio-intro h1 { font-size: 93px; }.portfolio-intro h1 > span { margin-left: 50px; }.portfolio-intro-copy h2 { font-size: 30px; }.portfolio-intro-copy > p { font-size: 11px; }.portfolio-intro-meta { font-size: 6px; gap: 8px; }.work-card-featured { grid-template-columns: 1.05fr 1fr; }.work-card-copy { padding: 26px; }.work-card-copy h2 { font-size: 42px; }.work-card-copy > p:not(.work-card-type) { font-size: 11px; }.work-card-art { padding-inline: 22px; }.work-art-label, .work-art-footer { left: 17px; right: 17px; font-size: 5px; }.mini-page { padding-inline: 12px; }.mini-hero > div:first-child > strong { font-size: 36px; }.mini-hero em { font-size: 14px; }.mini-court { min-height: 125px; }.work-card-placeholder { grid-template-columns: 36px 1fr; gap: 18px; padding: 20px; }.placeholder-mark { width: 34px; height: 46px; }.work-card-placeholder h2 { font-size: 25px; }.work-card-placeholder p { font-size: 9px; }.portfolio-next h2 { font-size: 44px; }.portfolio-next-inner { gap: 45px; }
+  .portfolio-intro-grid { gap: 35px; grid-template-columns: 1.1fr .9fr; }.portfolio-intro h1 { font-size: 93px; }.portfolio-intro h1 > span { margin-left: 50px; }.portfolio-intro-copy h2 { font-size: 30px; }.portfolio-intro-copy > p { font-size: 11px; }.portfolio-intro-meta { font-size: 6px; gap: 8px; }.work-card-featured { grid-template-columns: 1.05fr 1fr; }.work-card-copy { padding: 26px; }.work-card-copy h3 { font-size: 42px; }.work-card-copy > p:not(.work-card-type) { font-size: 11px; }.work-card-art { padding-inline: 22px; }.work-art-label, .work-art-footer { left: 17px; right: 17px; font-size: 5px; }.mini-page { padding-inline: 12px; }.mini-hero > div:first-child > strong { font-size: 36px; }.mini-hero em { font-size: 14px; }.mini-court { min-height: 125px; }.work-card-placeholder { grid-template-columns: 36px 1fr; gap: 18px; padding: 20px; }.placeholder-mark { width: 34px; height: 46px; }.work-card-placeholder h2 { font-size: 25px; }.work-card-placeholder p { font-size: 9px; }.portfolio-next h2 { font-size: 44px; }.portfolio-next-inner { gap: 45px; }
 }
 @media (max-width: 760px) {
   .portfolio-topline { padding-top: 22px; gap: 15px; }.portfolio-topline .eyebrow { font-size: 6px; line-height: 1.8; letter-spacing: .7px; }.portfolio-topline .eyebrow:last-child { max-width: 140px; text-align: right; }.portfolio-topline .eyebrow:first-child { gap: 9px; }.portfolio-intro-grid { grid-template-columns: 1fr; gap: 35px; padding-block: 36px; }.portfolio-intro-grid > div > .eyebrow { font-size: 8px; }.portfolio-intro h1 { font-size: clamp(85px, 20vw, 123px); line-height: .9; margin-top: 22px; }.portfolio-intro h1 > span { font-size: .85em; margin-left: 70px; letter-spacing: -3px; }.portfolio-intro-copy { padding-top: 0; }.portfolio-intro-copy h2 { font-size: 33px; }.portfolio-intro-copy h2 br { display: none; }.portfolio-cross { font-size: 25px; top: 2px; }.portfolio-intro-copy > p { font-size: 12px; max-width: 450px; margin-top: 13px; }.portfolio-intro-meta { font-size: 6px; margin-top: 20px; padding-top: 12px; }
   .portfolio-toolbar { padding-block: 17px; margin-bottom: 23px; gap: 13px; }.portfolio-filters { gap: 7px; width: 100%; }.portfolio-filters button { font-size: 9px; padding: 11px 12px; min-height: 44px; gap: 11px; }.portfolio-result { font-size: 9px; line-height: 1.8; }.portfolio-grid { grid-template-columns: 1fr; gap: 18px; }.work-card-featured { grid-template-columns: 1fr; }.work-card-art { min-height: 0; padding: 57px 33px; }.work-art-label, .work-art-footer { left: 20px; right: 20px; font-size: 6px; }.work-art-label { top: 20px; }.work-art-footer { bottom: 19px; font-size: 5px; }.mini-page { padding: 16px 17px 0; }.mini-nav { padding-bottom: 10px; }.mini-nav strong { font-size: 6px; }.mini-nav > span { font-size: 3.5px; }.mini-hero { padding-block: 17px; gap: 17px; }.mini-hero > div:first-child > strong { font-size: clamp(34px, 10.8vw, 67px); }.mini-hero em { font-size: clamp(14px, 4.2vw, 24px); margin-block: 7px 12px; }.mini-court { min-height: 0; }.mini-button { font-size: 3px; padding: 5px 7px; margin-top: 10px; }.mini-footer { font-size: 3px; padding-block: 8px; }
-  .work-card-copy { padding: 26px; }.work-card-meta .eyebrow { font-size: 6px; }.work-card-copy h2 { margin-top: 24px; font-size: 46px; }.work-card-copy h2 > span { font-size: 26px; }.work-card-copy .work-card-type { font-size: 12px; }.work-card-copy > p:not(.work-card-type) { font-size: 12px; margin-top: 14px; }.work-card-copy .tags { margin-top: 21px; }.work-card-copy .tags li { font-size: 9px; }.work-card-copy .text-link { font-size: 11px; }.work-card-placeholder { padding: 24px; gap: 22px; grid-template-columns: 48px 1fr; }.placeholder-topline { margin-bottom: 5px; }.placeholder-topline .eyebrow { font-size: 7px; }.placeholder-mark { width: 43px; height: 55px; }.work-card-placeholder h2 { font-size: 29px; }.work-card-placeholder p { font-size: 11px; }.portfolio-note { font-size: 9px; margin-top: 20px; }
+  .work-card-copy { padding: 26px; }.work-card-meta .eyebrow { font-size: 6px; }.work-card-copy h3 { margin-top: 24px; font-size: 46px; }.work-card-copy h3 > span { font-size: 26px; }.work-card-copy .work-card-type { font-size: 12px; }.work-card-copy > p:not(.work-card-type) { font-size: 12px; margin-top: 14px; }.work-card-copy .tags { margin-top: 21px; }.work-card-copy .tags li { font-size: 9px; }.work-card-copy .text-link { font-size: 11px; }.work-card-placeholder { padding: 24px; gap: 22px; grid-template-columns: 48px 1fr; }.placeholder-topline { margin-bottom: 5px; }.placeholder-topline .eyebrow { font-size: 7px; }.placeholder-mark { width: 43px; height: 55px; }.work-card-placeholder h2 { font-size: 29px; }.work-card-placeholder p { font-size: 11px; }.portfolio-note { font-size: 9px; margin-top: 20px; }
   .portfolio-next { margin-top: 48px; }.portfolio-next-inner { grid-template-columns: 1fr; gap: 24px; padding-block: 39px; }.portfolio-next h2 { font-size: 46px; line-height: 1.1; }.portfolio-next-inner > div:last-child > p { font-size: 12px; }.portfolio-next .button { margin-top: 20px; }.case-facts { grid-template-columns: 1fr; gap: 15px; padding-block: 20px; margin-block: 23px; }.case-facts dt { font-size: 7px; margin-bottom: 3px; }.case-facts dd { font-size: 11px; }.case-links { gap: 17px; }
 }
 @media (max-width: 360px) {
-  .portfolio-intro h1 { font-size: 80px; }.portfolio-intro h1 > span { margin-left: 55px; }.portfolio-intro-grid { gap: 29px; }.portfolio-intro-copy h2 { font-size: 29px; }.work-card-art { padding-inline: 25px; }.mini-page { padding-inline: 12px; }.mini-hero { gap: 12px; }.mini-hero > div:first-child > strong { font-size: 33px; }.mini-hero em { font-size: 13px; }.mini-nav strong { font-size: 5px; }.mini-nav > span { font-size: 3px; }.work-art-label, .work-art-footer { font-size: 5px; }.work-card-copy { padding: 23px; }.work-card-meta .project-status { font-size: 6px; }.work-card-copy h2 { font-size: 42px; }.work-card-placeholder { padding: 21px; grid-template-columns: 35px 1fr; gap: 19px; }.placeholder-mark { width: 33px; height: 46px; }.work-card-placeholder h2 { font-size: 25px; }.portfolio-next h2 { font-size: 41px; }
+  .portfolio-intro h1 { font-size: 80px; }.portfolio-intro h1 > span { margin-left: 55px; }.portfolio-intro-grid { gap: 29px; }.portfolio-intro-copy h2 { font-size: 29px; }.work-card-art { padding-inline: 25px; }.mini-page { padding-inline: 12px; }.mini-hero { gap: 12px; }.mini-hero > div:first-child > strong { font-size: 33px; }.mini-hero em { font-size: 13px; }.mini-nav strong { font-size: 5px; }.mini-nav > span { font-size: 3px; }.work-art-label, .work-art-footer { font-size: 5px; }.work-card-copy { padding: 23px; }.work-card-meta .project-status { font-size: 6px; }.work-card-copy h3 { font-size: 42px; }.work-card-placeholder { padding: 21px; grid-template-columns: 35px 1fr; gap: 19px; }.placeholder-mark { width: 33px; height: 46px; }.work-card-placeholder h2 { font-size: 25px; }.portfolio-next h2 { font-size: 41px; }
 }
 
 @media (max-width: 1100px) {
@@ -135,7 +135,7 @@
   .study-map > strong { font-size: 63px; }
   .crud-grid > span { padding: 13px 9px; font-size: 10px; }
   .work-card-standard .work-card-copy { padding: 27px; }
-  .work-card-standard .work-card-copy h2 { font-size: 43px; }
+  .work-card-standard .work-card-copy h3 { font-size: 43px; }
   .report-flow { gap: 7px; }
   .report-flow > span { padding-inline: 9px; font-size: 7px; }
   .donation-map > strong { font-size: 57px; }
@@ -145,7 +145,7 @@
   .coursework-art { padding-inline: 22px; }
   .crud-grid > span { padding-inline: 7px; font-size: 9px; }
   .work-card-standard .work-card-copy { padding: 25px; }
-  .work-card-standard .work-card-copy h2 { font-size: 39px; }
+  .work-card-standard .work-card-copy h3 { font-size: 39px; }
   .work-card-standard .coursework-art { min-height: 320px; }
   .work-card-standard .work-card-meta { align-items: start; flex-direction: column; }
   .report-flow { gap: 5px; }
@@ -161,11 +161,11 @@
   .map-connection p { font-size: 6px; letter-spacing: .6px; }
   .work-card-standard .coursework-art { min-height: 340px; padding-inline: 27px; }
   .work-card-standard .work-card-copy { padding: 26px; }
-  .work-card-standard .work-card-copy h2 { font-size: 46px; }
+  .work-card-standard .work-card-copy h3 { font-size: 46px; }
   .report-flow { gap: 7px; }
   .report-flow > span { padding-inline: 9px; font-size: 7px; }
   .portfolio-empty { padding: 30px 25px; }
-  .portfolio-empty h2 { font-size: 39px; }
+  .portfolio-empty h3 { font-size: 39px; }
   .empty-court-mark { right: 24px; top: 23px; font-size: 25px; }
   .coursework-dialog .case-facts { grid-template-columns: 1fr; }
   .case-bullets { font-size: 12px; }
@@ -175,7 +175,7 @@
   .study-map > strong { font-size: 53px; }
   .crud-grid > span { padding-inline: 7px; font-size: 9px; }
   .work-card-standard .work-card-copy { padding: 23px; }
-  .work-card-standard .work-card-copy h2 { font-size: 41px; }
+  .work-card-standard .work-card-copy h3 { font-size: 41px; }
   .report-flow { gap: 5px; }
   .report-flow > span { padding-inline: 6px; font-size: 6px; }
   .donation-map > strong { font-size: 51px; gap: 10px; }
