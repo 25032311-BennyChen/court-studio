@@ -114,6 +114,68 @@
 .case-bullets li + li { margin-top: 11px; }
 .case-bullets code { font-size: .95em; overflow-wrap: anywhere; }
 
+.coursework-dialog .case-facts dd,
+.coursework-dialog .concept-details p,
+.coursework-dialog .case-bullets { font-size: 13px; }
+.coursework-dialog .case-facts { margin-bottom: 21px; }
+.case-toolbar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 7px 13px;
+  border-bottom: 1px solid var(--line);
+  background: var(--ivory);
+}
+.case-toolbar .dialog-close { margin: 0; }
+.coursework-dialog .dialog-content { padding-top: 22px; }
+.case-entry-links { gap: 10px 20px; margin-top: 0; }
+.case-section h3 { font-size: 16px; margin-bottom: 8px; }
+.case-bullets strong { color: var(--pine); }
+.case-flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 132px), 1fr));
+  gap: 7px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+  counter-reset: flow-step;
+}
+.case-flow li {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  background: var(--pale);
+  color: var(--pine);
+  font-size: 11px;
+  font-weight: 600;
+  counter-increment: flow-step;
+}
+.case-flow li::before { content: counter(flow-step, decimal-leading-zero); color: var(--muted); font-size: 9px; }
+.case-screens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 176px), 1fr));
+  gap: 14px;
+}
+.case-screens figure { margin: 0; }
+.case-screens a { display: block; aspect-ratio: 4 / 3; border: 1px solid var(--line); background: #fff; }
+.case-screens a:hover { border-color: var(--pine); }
+.case-screens img { width: 100%; height: 100%; object-fit: contain; object-position: center top; }
+.case-screens figcaption { margin-top: 6px; font-size: 12px; color: var(--muted); }
+.coursework-dialog .concept-details .case-note { margin-top: 12px; font-size: 11px; }
+.case-comparison { border-block: 1px solid var(--line); }
+.case-comparison summary { padding: 12px 0; color: var(--pine); font-size: 13px; font-weight: 700; cursor: pointer; }
+.case-comparison dl { display: grid; gap: 12px; margin: 0 0 14px; }
+.case-comparison dt { color: var(--pine); font-size: 13px; font-weight: 700; }
+.case-comparison dd { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
+.case-comparison a,
+.case-references a { text-decoration: underline; text-underline-offset: 3px; color: var(--pine); }
+.case-references { display: flex; flex-wrap: wrap; gap: 5px 17px; list-style: none; padding: 0; margin: 7px 0 0; font-size: 12px; }
+.case-references a { display: inline-flex; align-items: center; min-height: 36px; }
+
 @media (max-width: 1100px) {
   .portfolio-intro-grid { gap: 55px; padding-block: 50px; }.portfolio-intro h1 { font-size: 110px; }.portfolio-intro h1 > span { margin-left: 65px; }.portfolio-intro-copy h2 { font-size: 32px; }.portfolio-toolbar { flex-wrap: wrap; gap: 15px; }.portfolio-result { max-width: none; }.work-card-art { padding-inline: 29px; min-height: 390px; }.work-card-copy { padding: 30px; }.work-card-copy h3 { font-size: 47px; }.work-card-meta { gap: 10px; }.work-card-meta .eyebrow { font-size: 6px; }.mini-hero { gap: 13px; }.mini-page { padding-inline: 15px; }.mini-court { min-height: 145px; }.work-card-placeholder { padding: 23px; gap: 21px; }.work-card-placeholder h2 { font-size: 27px; }.portfolio-next-inner { gap: 70px; }
 }
